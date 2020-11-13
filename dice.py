@@ -1,6 +1,7 @@
 from random import randint
 
 
+# parametr wg wzoru: xDy+z
 def throw_dice(kind_of_throw):
     throw = 0
     type_of_dices = [3, 4, 6, 8, 10, 12, 20, 100]  # ilość ścian kostek, które występują w grach
@@ -78,5 +79,5 @@ def throw_dice(kind_of_throw):
 # 3Dhjhj
 # Dhjhj
 
-kind_of_throw = "ghgD6+ldcld"
-print(throw_dice(kind_of_throw))
+
+print(throw_dice("2D10+10"))
