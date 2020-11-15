@@ -6,6 +6,11 @@ CODE = r'^(\d*)D(\d+)([+|-]\d+)*$'
 
 
 def roll_the_dice(dice_code):
+    """
+    This function check input and return result of roll the dice.
+    Input must match the pattern 'xDy +/- z',
+    otherwise a message will be displayed.
+    """
     check_code = re.search(CODE, dice_code)
     if check_code:
         dice = int(check_code.group(2))
